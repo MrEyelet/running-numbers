@@ -17,6 +17,7 @@ h1 {
   flex-direction: column;
   min-height: 100vh;
   text-align: center;
+  background-color: #000;
 }
 .container__wrapper {
   display: flex;
@@ -34,7 +35,7 @@ h1 {
 .tile__data {
   display: flex;
   justify-content: center;
-  margin: 0;
+  margin: 2rem 0;
 }
 @media only screen and (max-width: 767px) {
   .container__wrapper {
@@ -46,11 +47,4 @@ h1 {
   .tile:nth-of-type(n + 2) {
     margin-top: 2rem;
   }
-}
-
-.test {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
 }
