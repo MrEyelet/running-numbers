@@ -1,0 +1,8 @@
+@mixin wrapper {
+  max-width: $wrapper-width;
+  width: 100%;
+  padding: 0 $wrapper-padding;
+  @include portrait {
+    padding: 0 1.5rem;
+  }
+}

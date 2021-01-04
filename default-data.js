@@ -1,5 +1,5 @@
 module.exports = {
-  title: "Title ipsum dolor",
+  title: "Running numbers in action!",
   numbersRunningSpeedMilisecond: 1500,
   sections: [
     {

@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="./reset.css" />
-    <link rel="stylesheet" href="./styles.css" />
+    <!-- <link rel="stylesheet" href="./styles.css" /> -->
+    <link rel="stylesheet" href="./style.min.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto&display=swap" rel="stylesheet" />
@@ -24,10 +25,10 @@
           <i class="{{icon}}" style="color:{{../style.textColor}}; font-size: {{../style.titleFontSize}};"></i>
           <div class="tile__data text-visual" style="color:{{../style.numbersColor}}; font-size: {{../style.numbersFontSize}};">
             <p>{{number.prefix}}</p>
-            <p class="tile__counter">{{number.value}}</p>
+            <p class="tile__counter" data-run-speed="{{../numbersRunningSpeedMilisecond}}">{{number.value}}</p>
             <p>{{number.suffix}}</p>
           </div>
-          <p style="color:{{../style.textColor}};">{{paragraph}}</p>
+          <p class="tile__copy" style="color:{{../style.textColor}};">{{paragraph}}</p>
         </div>
         {{/each}}
       </div>

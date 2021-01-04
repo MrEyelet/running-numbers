@@ -1,0 +1,12 @@
+.hero {
+  &__title {
+    margin-bottom: 4rem;
+  }
+  &__copy {
+    font-size: 1.4rem;
+  }
+  &.container {
+    justify-content: center;
+    color: #fff;
+  }
+}
