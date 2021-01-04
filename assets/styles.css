@@ -5,10 +5,20 @@
 }
 html {
   font-size: 10px;
-  font-family: "Merriweather", serif;
+  font-family: "Roboto", sans-serif;
 }
 h1 {
   font-size: 5rem;
+}
+.text-visual {
+  font-family: "Archivo Black", sans-serif;
+}
+.hero.container {
+  color: #fff;
+  justify-content: center;
+}
+.hero__title {
+  margin-bottom: 2rem;
 }
 .container {
   display: flex;

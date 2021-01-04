@@ -12,7 +12,7 @@ module.exports = {
       paragraph: "Lorem ipsum dolor sit amet."
     },
     {
-      icon: "fas fa-money-bill-alt",
+      icon: "fa fas fa-money-bill-alt",
       number: {
         prefix: ">",
         value: 30,

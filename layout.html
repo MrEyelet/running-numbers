@@ -5,20 +5,24 @@
     <link rel="stylesheet" href="./reset.css" />
     <link rel="stylesheet" href="./styles.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;900&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/af9bab70c0.js" crossorigin="anonymous"></script>
+
     <title>Running numbers</title>
   </head>
   <body>
-    <section class="container">
-      <h1 style="color:{{style.numbersColor}};">scroll down</h1>
+    <section class="hero container">
+      <h1 class="hero__title text-visual">Running numbers</h1>
+      <p class="hero__copy">scroll down to see component</p>
     </section>
     <section class="container">
-      <h1 style="font-size:{{style.titleFontSize}}; color:{{style.textColor}};">{{title}}</h1>
+      <h1 class="text-visual" style="font-size:{{style.titleFontSize}}; color:{{style.textColor}};">{{title}}</h1>
       <div class="container__wrapper">
         {{#each sections}}
         <div class="tile" style="background-color:{{../style.backgroundColor}};">
-          <span style="color:{{../style.textColor}};">{{icon}}</span>
-          <div class="tile__data" style="color:{{../style.numbersColor}}; font-size: {{../style.numbersFontSize}};">
+          <i class="{{icon}}" style="color:{{../style.textColor}}; font-size: {{../style.titleFontSize}};"></i>
+          <div class="tile__data text-visual" style="color:{{../style.numbersColor}}; font-size: {{../style.numbersFontSize}};">
             <p>{{number.prefix}}</p>
             <p class="tile__counter">{{number.value}}</p>
             <p>{{number.suffix}}</p>
@@ -28,7 +32,6 @@
         {{/each}}
       </div>
     </section>
-    <!-- <script src="https://kit.fontawesome.com/af9bab70c0.js" crossorigin="anonymous"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./js/jquery.waypoints.min.js"></script>
     <script src="./js/counterup.js"></script>
