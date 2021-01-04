@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;900&display=swap" rel="stylesheet" />
+    <title></title>
+    <style></style>
+  </head>
+  <body>
+    <section class="container">
+      <h1>{{title}}</h1>
+      <div class="container__wrapper">
+        {{#each sections}}
+        <div
+          class="tile"
+          style="background-image: url({{img}});
+        {{> img-bg}}"
+        >
+          <span>{{icon}}</span>
+          <div class="tile__data">
+            <p>{{number.prefix}}</p>
+            <p>{{number.value}}</p>
+            <p>{{number.suffix}}</p>
+          </div>
+          <p>{{paragraph}}</p>
+        </div>
+        {{/each}}
+      </div>
+      {{{style.titleFontSize}}}
+    </section>
+    <!-- <script src="https://kit.fontawesome.com/af9bab70c0.js" crossorigin="anonymous"></script> -->
+  </body>
+</html>
