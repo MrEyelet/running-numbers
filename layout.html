@@ -6,23 +6,24 @@
     <link rel="stylesheet" href="./styles.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;900&display=swap" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <title></title>
     <style></style>
   </head>
   <body>
+    <section class="test">
+      <h1>scroll down</h1>
+    </section>
     <section class="container">
       <h1>{{title}}</h1>
       <div class="container__wrapper">
         {{#each sections}}
-        <div
-          class="tile"
-          style="background-image: url({{img}});
-        {{> img-bg}}"
-        >
+        <div class="tile">
           <span>{{icon}}</span>
           <div class="tile__data">
             <p>{{number.prefix}}</p>
-            <p>{{number.value}}</p>
+            <p class="count">{{number.value}}</p>
             <p>{{number.suffix}}</p>
           </div>
           <p>{{paragraph}}</p>
@@ -32,5 +33,8 @@
       {{{style.titleFontSize}}}
     </section>
     <!-- <script src="https://kit.fontawesome.com/af9bab70c0.js" crossorigin="anonymous"></script> -->
+    <script src="./js/jquery.waypoints.min.js"></script>
+    <script src="./js/counterup.js"></script>
+    <script src="./js/running.js"></script>
   </body>
 </html>

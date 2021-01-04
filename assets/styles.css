@@ -29,6 +29,7 @@ h1 {
   justify-content: space-between;
   text-align: center;
   padding: 1.5rem;
+  font-size: 3rem;
 }
 .tile__data {
   display: flex;
@@ -45,4 +46,11 @@ h1 {
   .tile:nth-of-type(n + 2) {
     margin-top: 2rem;
   }
+}
+
+.test {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
