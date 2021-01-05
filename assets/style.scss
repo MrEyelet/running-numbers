@@ -1,13 +1,18 @@
-/* SASS and Global'ish Stuff */
-@import "base/variables";
-@import "base/common";
-
 /*MIXINS*/
 @import "mixins/wrapper";
 @import "mixins/breakpoints";
 
+/*FUNCTIONS*/
+@import "functions/vw";
+
+/* SASS and Global'ish Stuff */
+@import "base/variables";
+@import "base/common";
+
 /* BEM Blocks */
+@import "components/preloader";
 @import "components/hero";
 @import "components/container";
 @import "components/text-visual";
+@import "components/component-title";
 @import "components/tile";

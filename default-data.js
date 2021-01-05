@@ -9,7 +9,7 @@ module.exports = {
         value: 18,
         suffix: "$"
       },
-      paragraph: "Lorem ipsum dolor sit amet."
+      paragraph: "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet."
     },
     {
       icon: "fa fas fa-money-bill-alt",
@@ -28,12 +28,39 @@ module.exports = {
       },
       paragraph: "Lorem ipsum dolor sit amet."
     }
+    // {
+    //   icon: "fa fas fa-money-bill-alt",
+    //   number: {
+    //     prefix: ">",
+    //     value: 30,
+    //     suffix: "m$"
+    //   },
+    //   paragraph: "Lorem ipsum dolor sit amet."
+    // },
+    // {
+    //   icon: "fa fas fa-money-bill-alt",
+    //   number: {
+    //     prefix: ">",
+    //     value: 30,
+    //     suffix: "m$"
+    //   },
+    //   paragraph: "Lorem ipsum dolor sit amet."
+    // },
+    // {
+    //   icon: "fa fas fa-money-bill-alt",
+    //   number: {
+    //     prefix: ">",
+    //     value: 30,
+    //     suffix: "m$"
+    //   },
+    //   paragraph: "Lorem ipsum dolor sit amet."
+    // }
   ],
   style: {
     backgroundColor: "#000000",
     textColor: "#ffffff",
     numbersColor: "#c11d2a",
-    titleFontSize: "48px",
-    numbersFontSize: "52px"
+    titleFontSize: "4.8rem",
+    numbersFontSize: "5.2rem"
   }
 }

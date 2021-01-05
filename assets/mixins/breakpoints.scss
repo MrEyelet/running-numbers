@@ -1,20 +1,20 @@
 @mixin mobile-sm {
-  @media (max-width: #{$screen-mobile-sm}) {
+  @media only screen and (max-width: #{$screen-mobile-sm}) {
     @content;
   }
 }
 @mixin mobile {
-  @media (max-width: #{$screen-mobile}) {
+  @media only screen and (max-width: #{$screen-mobile}) {
     @content;
   }
 }
 @mixin mobile-lg {
-  @media (max-width: #{$screen-mobile-lg}) {
+  @media only screen and (max-width: #{$screen-mobile-lg}) {
     @content;
   }
 }
 @mixin phablet {
-  @media (max-width: #{$screen-phablet}) {
+  @media only screen and (max-width: #{$screen-phablet}) {
     @content;
   }
 }

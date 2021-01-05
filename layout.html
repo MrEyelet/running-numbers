@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./reset.css" />
     <!-- <link rel="stylesheet" href="./styles.css" /> -->
     <link rel="stylesheet" href="./style.min.css" />
@@ -13,29 +14,45 @@
     <title>Running numbers</title>
   </head>
   <body>
+    <div class="preloader">
+      <div class="preloader__cover"></div>
+      <div class="preloader__outer-circle">
+        <div class="preloader__gap"></div>
+        <div class="preloader__inner-circle"></div>
+      </div>
+    </div>
     <section class="hero container">
-      <h1 class="hero__title text-visual">Running numbers</h1>
-      <p class="hero__copy">scroll down to see component</p>
+      <h1 class="hero__title hero__text text-visual">Running numbers</h1>
+      <p class="hero__copy hero__text">scroll down to see component</p>
+      <span class="hero__line" aria-hidden="true"></span>
     </section>
     <section class="container">
-      <h1 class="text-visual" style="font-size:{{style.titleFontSize}}; color:{{style.textColor}};">{{title}}</h1>
+      {{#if title}}
+      <h1 class="component-title text-visual" style="font-size:{{style.titleFontSize}}; color: {{style.textColor}};"><span class="component-title__inner">{{title}}</span><span class="component-title__overlay" style="background-color: {{style.numbersColor}};" aria-hidden="true"></span></h1>
+      {{/if}}
       <div class="container__wrapper">
-        {{#each sections}}
-        <div class="tile" style="background-color:{{../style.backgroundColor}};">
+        {{#each_limit sections 5}}
+        <div class="tile" style="background-color: {{../style.backgroundColor}};">
+          {{#if icon}}
           <i class="{{icon}}" style="color:{{../style.textColor}}; font-size: {{../style.titleFontSize}};"></i>
-          <div class="tile__data text-visual" style="color:{{../style.numbersColor}}; font-size: {{../style.numbersFontSize}};">
+          {{/if}}
+          <div class="tile__data text-visual" style="color: {{../style.numbersColor}}; font-size: {{../style.numbersFontSize}};">
             <p>{{number.prefix}}</p>
             <p class="tile__counter" data-run-speed="{{../numbersRunningSpeedMilisecond}}">{{number.value}}</p>
             <p>{{number.suffix}}</p>
           </div>
           <p class="tile__copy" style="color:{{../style.textColor}};">{{paragraph}}</p>
         </div>
-        {{/each}}
+        {{/each_limit}}
       </div>
     </section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script> -->
+
     <script src="./js/jquery.waypoints.min.js"></script>
     <script src="./js/counterup.js"></script>
     <script src="./js/running.js"></script>
+    <script src="./js/main.min.js"></script>
   </body>
 </html>

@@ -2,8 +2,18 @@
   &__title {
     margin-bottom: 4rem;
   }
+  &__text {
+    will-change: transform;
+  }
   &__copy {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
+  }
+  &__line {
+    width: 1px;
+    height: 15rem;
+    margin-top: 3rem;
+    transform-origin: top;
+    background-color: $color_primary;
   }
   &.container {
     justify-content: center;
