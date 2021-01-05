@@ -12,6 +12,7 @@
     "counterup2": "^1.0.4",
     "express": "^4.17.1",
     "gsap": "^3.5.1",
-    "handlebars": "^4.7.6"
+    "handlebars": "^4.7.6",
+    "waypoints": "^4.0.1"
   }
 }
