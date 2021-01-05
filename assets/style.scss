@@ -1,18 +1,18 @@
 /*MIXINS*/
-@import "mixins/wrapper";
-@import "mixins/breakpoints";
+@import "styles/mixins/wrapper";
+@import "styles/mixins/breakpoints";
 
 /*FUNCTIONS*/
-@import "functions/vw";
+@import "styles/functions/vw";
 
 /* SASS and Global'ish Stuff */
-@import "base/variables";
-@import "base/common";
+@import "styles/base/variables";
+@import "styles/base/common";
 
 /* BEM Blocks */
-@import "components/preloader";
-@import "components/hero";
-@import "components/container";
-@import "components/text-visual";
-@import "components/component-title";
-@import "components/tile";
+@import "styles/components/preloader";
+@import "styles/components/hero";
+@import "styles/components/container";
+@import "styles/components/text-visual";
+@import "styles/components/component-title";
+@import "styles/components/tile";

@@ -24,7 +24,7 @@ class RevealComponent {
       //
       .to(".component-title__overlay", { duration: 2.5, scaleX: 0, transformOrigin: "right", ease: Power4.easeOut })
       //
-      .from(".tile", { duration: 1, x: "15%", opacity: 0, stagger: 0.1, ease: Power4.easeOut }, "=-1.5")
+      .from(".tile", { duration: 1.5, x: "30%", opacity: 0, stagger: 0.15, ease: Power4.easeOut }, "=-1.5")
   }
 }
 

@@ -4,7 +4,6 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./reset.css" />
-    <!-- <link rel="stylesheet" href="./styles.css" /> -->
     <link rel="stylesheet" href="./style.min.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -34,7 +33,7 @@
         {{#each_limit sections 5}}
         <div class="tile" style="background-color: {{../style.backgroundColor}};">
           {{#if icon}}
-          <i class="{{icon}}" style="color:{{../style.textColor}}; font-size: {{../style.titleFontSize}};"></i>
+          <i class="tile__icon {{icon}}" style="color:{{../style.textColor}}; font-size: {{../style.titleFontSize}};"></i>
           {{/if}}
           <div class="tile__data text-visual" style="color: {{../style.numbersColor}}; font-size: {{../style.numbersFontSize}};">
             <p>{{number.prefix}}</p>
@@ -46,14 +45,6 @@
         {{/each_limit}}
       </div>
     </section>
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script> -->
-
-    <!-- <script src="./js/jquery.waypoints.min.js"></script> -->
-    <!-- <script src="./js/counterup.js"></script> -->
-    <!-- <script src="./js/jquery.rcounter.js"></script> -->
-    <!-- <script type="" src="./js/running.js"></script> -->
     <script src="./js/main.min.js"></script>
   </body>
 </html>

@@ -9,7 +9,7 @@ class RunningNumbers {
   events() {
     const el = document.querySelectorAll(".tile__counter")
     const runSpeed = document.querySelector("[data-run-speed]").getAttribute("data-run-speed")
-    console.log(runSpeed)
+    // console.log(runSpeed)
     el.forEach(testFunc)
 
     function testFunc(item) {

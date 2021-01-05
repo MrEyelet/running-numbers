@@ -9,7 +9,7 @@ module.exports = {
         value: 18,
         suffix: "$"
       },
-      paragraph: "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet."
+      paragraph: "Lorem ipsum dolor sit amet."
     },
     {
       icon: "fa fas fa-money-bill-alt",

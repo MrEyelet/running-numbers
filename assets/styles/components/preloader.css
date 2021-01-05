@@ -1,0 +1,57 @@
+.preloader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+}
+.preloader__cover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  right: 0;
+  bottom: 0;
+}
+.preloader__outer-circle {
+  display: flex;
+  width: 15rem;
+  height: 15rem;
+  margin: 5rem auto;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  animation: circular 0.5s infinite ease-out;
+}
+.preloader__inner-circle {
+  width: 60%;
+  height: 60%;
+  border-radius: 50%;
+  z-index: 10;
+}
+.preloader__gap {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin: 0 0 0 -2px;
+  width: 15rem;
+  height: 15rem;
+}
+@keyframes circular {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.preloader.is-hidden {
+  display: none;
+}
