@@ -8,9 +8,9 @@
   font-size: 3rem;
   @include phablet {
     flex: 100%;
-    // &:nth-of-type(n + 2) {
-    //   margin-top: 2rem;
-    // }
+    &:nth-of-type(n + 2) {
+      margin-top: 5rem;
+    }
   }
   &__icon {
     margin-bottom: 2rem;

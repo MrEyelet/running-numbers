@@ -29,7 +29,7 @@
       {{#if title}}
       <h1 class="component-title text-visual" style="font-size:{{style.titleFontSize}}; color: {{style.textColor}};"><span class="component-title__inner">{{title}}</span><span class="component-title__overlay" style="background-color: {{style.numbersColor}};" aria-hidden="true"></span></h1>
       {{/if}}
-      <div class="container__wrapper">
+      <div class="container__tiles">
         {{#each_limit sections 5}}
         <div class="tile" style="background-color: {{../style.backgroundColor}};">
           {{#if icon}}
