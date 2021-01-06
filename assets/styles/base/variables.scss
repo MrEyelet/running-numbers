@@ -1,41 +1,30 @@
+//base colors
 $background: #0f1217;
 $color_white: #ffffff;
 $color_primary: #c11d2a;
 
+//wrappers
 $wrapper-width: 100%;
 $wrapper-padding: 5rem;
+
+//responsive base
 $vw_base: 1440;
 
+//fonts
 $lead-font: "Archivo Black", sans-serif;
 $base-font: "Roboto", sans-serif;
 
-$god: 999999999999999999999;
-$nibiru: 9999;
-$pluton: 9000;
-$uran: 8000;
-$neptun: 7000;
-$saturn: 6000;
-$jupiter: 5000;
-$mars: 4000;
-$earth: 3000;
-$venus: 2000;
-$merkury: 1000;
-$sun: 900;
-$sky: 500;
-$mountEverest: 100;
-$mountBlanc: 10;
-$ground-level: 0;
-$marianaTrench: -10;
-$outerCore: -100;
-$innerCore: -500;
-$hell: -1000;
+//z-index
+$over-all: 9999;
+$base: 0;
+$below-base: -10;
 
 //bp
 $screen-mobile-sm: 320px;
 $screen-mobile: 376px;
 $screen-mobile-lg: 480px;
 $screen-phablet: 576px;
-$screen-portrait: 767px;
+$screen-portrait: 769px;
 $screen-portrait-lg: 992px;
 $screen-tablet: 1024px;
 $screen-laptop-sm: 1200px;

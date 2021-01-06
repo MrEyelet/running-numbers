@@ -11,7 +11,7 @@
   right: 0;
   background-color: $color_white;
   overflow: hidden;
-  z-index: $god;
+  z-index: $over-all;
   &__cover {
     width: 100%;
     height: 100%;
@@ -21,7 +21,7 @@
     right: 0;
     bottom: 0;
     background-color: $color_primary;
-    z-index: $god;
+    z-index: $over-all;
   }
   &__outer-circle {
     display: flex;

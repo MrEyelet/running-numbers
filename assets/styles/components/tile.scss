@@ -6,7 +6,7 @@
   text-align: center;
   padding: 1.5rem;
   font-size: 3rem;
-  @include phablet {
+  @include portrait {
     flex: 100%;
     &:nth-of-type(n + 2) {
       margin-top: 5rem;

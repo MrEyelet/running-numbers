@@ -1,7 +1,7 @@
 .component-title {
   height: 6rem;
   position: relative;
-  @include phablet {
+  @include portrait {
     height: auto;
     margin-bottom: 3rem;
   }
