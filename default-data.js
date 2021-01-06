@@ -28,33 +28,6 @@ module.exports = {
       },
       paragraph: "Lorem ipsum dolor sit amet."
     }
-    // {
-    //   icon: "fa fas fa-money-bill-alt",
-    //   number: {
-    //     prefix: ">",
-    //     value: 30,
-    //     suffix: "m$"
-    //   },
-    //   paragraph: "Lorem ipsum dolor sit amet."
-    // },
-    // {
-    //   icon: "fa fas fa-money-bill-alt",
-    //   number: {
-    //     prefix: ">",
-    //     value: 30,
-    //     suffix: "m$"
-    //   },
-    //   paragraph: "Lorem ipsum dolor sit amet."
-    // },
-    // {
-    //   icon: "fa fas fa-money-bill-alt",
-    //   number: {
-    //     prefix: ">",
-    //     value: 30,
-    //     suffix: "m$"
-    //   },
-    //   paragraph: "Lorem ipsum dolor sit amet."
-    // }
   ],
   style: {
     backgroundColor: "#000000",

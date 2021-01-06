@@ -18,7 +18,7 @@ class RevealComponent {
         // markers: true
       }
     })
-    tl.from(".component-title__overlay", { duration: 1, scaleX: 0, ease: Power4.easeOut }, "=+0.5")
+    tl.from(".component-title__overlay", { duration: 1, scaleX: 0, ease: Power4.easeOut }, "=+0.25")
       //
       .to(".component-title__inner", { duration: 0, opacity: 1, ease: Power4.easeOut })
       //
