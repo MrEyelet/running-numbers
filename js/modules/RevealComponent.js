@@ -5,10 +5,10 @@ gsap.registerPlugin(ScrollTrigger)
 
 class RevealComponent {
   constructor() {
-    this.revealEls()
+    this.events()
   }
 
-  revealEls() {
+  events() {
     let tl = gsap.timeline({
       scrollTrigger: {
         trigger: ".component-title",
