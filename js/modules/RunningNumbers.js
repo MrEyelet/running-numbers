@@ -21,7 +21,7 @@ class RunningNumbers {
           })
           // this.destroy()
         },
-        offset: "bottom-in-view"
+        offset: "100%"
       })
     }
   }
